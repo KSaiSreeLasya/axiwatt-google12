@@ -53,7 +53,7 @@ export const Technology: React.FC = () => {
         >
           <p className="text-[12px] tracking-[0.5em] uppercase text-black mb-6 font-semibold">Engineered Legacy</p>
           <h2 className="text-5xl md:text-7xl font-serif text-[#2c2825] mb-8">World-Class Systems. 40-Year Durability.</h2>
-          <p className="text-[#635e5a] max-w-3xl mx-auto font-light text-lg">
+          <p className="text-black max-w-3xl mx-auto font-light text-lg">
             Axiwatt partners exclusively with globally respected manufacturers to ensure performance, longevity, and reliability engineered for Hyderabad's climate.
           </p>
         </motion.div>
