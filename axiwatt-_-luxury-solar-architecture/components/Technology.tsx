@@ -75,7 +75,7 @@ export const Technology: React.FC = () => {
               >
                 {item.title}
               </motion.h4>
-              <p className="text-[#635e5a] text-base font-light leading-relaxed mb-10 flex-grow">
+              <p className="text-black text-base font-light leading-relaxed mb-10 flex-grow">
                 {item.desc}
               </p>
 
