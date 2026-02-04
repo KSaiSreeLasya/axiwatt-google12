@@ -61,7 +61,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.1, duration: 0.8 }}
-                    className="flex items-start gap-4 text-[#635e5a]"
+                    className="flex items-start gap-4 text-black"
                   >
                     <span className="text-[#b9975b] font-serif text-xl mt-1">✦</span>
                     <span className="font-light text-base leading-relaxed">{feature}</span>
@@ -119,7 +119,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.1, duration: 0.8 }}
-                    className="flex items-start gap-4 text-[#635e5a]"
+                    className="flex items-start gap-4 text-black"
                   >
                     <span className="text-[#b9975b] font-serif text-xl mt-1">✦</span>
                     <span className="font-light text-base leading-relaxed">{feature}</span>
