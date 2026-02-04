@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useMetaTags } from '../hooks/useMetaTags';
+import { seoConfig } from '../config/seoConfig';
 
 interface PartnersPageProps {
   onOpenConsultation: () => void;
@@ -39,6 +41,8 @@ const partnerCategories = [
 ];
 
 export const PartnersPage: React.FC<PartnersPageProps> = ({ onOpenConsultation }) => {
+  useMetaTags(seoConfig.partners);
+
   return (
     <div className="bg-[#fdfcfb] pt-24 pb-40 min-h-screen overflow-hidden">
       <div className="container mx-auto px-8">

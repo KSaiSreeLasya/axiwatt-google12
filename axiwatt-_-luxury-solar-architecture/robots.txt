@@ -1,0 +1,11 @@
+# Robots.txt for Axiwatt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://axiwatt.com/sitemap.xml
+
+# Crawl Delay (optional, in seconds)
+Crawl-delay: 1

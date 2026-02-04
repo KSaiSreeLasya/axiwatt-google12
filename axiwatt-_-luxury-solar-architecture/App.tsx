@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useMetaTags } from './hooks/useMetaTags';
+import { seoConfig } from './config/seoConfig';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { BrandStrip } from './components/BrandStrip';
@@ -26,6 +28,10 @@ export type View = 'home' | 'about' | 'products' | 'technology' | 'process' | 'p
 const App: React.FC = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [currentView, setCurrentView] = useState<View>('home');
+
+  // Update meta tags based on current view
+  const metaConfig = seoConfig[currentView];
+  useMetaTags(metaConfig);
 
   useEffect(() => {
     window.scrollTo(0, 0);
