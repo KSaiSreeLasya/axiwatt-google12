@@ -31,6 +31,8 @@ const products = [
 ];
 
 export const ProductsPage: React.FC = () => {
+  useMetaTags(seoConfig.products);
+
   return (
     <div className="bg-[#faf9f6] py-24">
       <div className="container mx-auto px-6">
