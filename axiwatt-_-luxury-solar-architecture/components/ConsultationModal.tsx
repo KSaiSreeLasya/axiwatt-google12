@@ -109,7 +109,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           onClick={onClose}
-          className="absolute top-8 right-8 text-[#635e5a] hover:text-[#2c2825] transition-colors"
+          className="absolute top-8 right-8 text-black hover:text-[#2c2825] transition-colors"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
