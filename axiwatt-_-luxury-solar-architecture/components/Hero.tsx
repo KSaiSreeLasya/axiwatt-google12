@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 
@@ -59,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
             Where Grandeur <br /> 
             <span className="italic font-light opacity-90">Meets</span> Autonomy
           </motion.h1>
-          <motion.p variants={itemVariants} className="text-[#635e5a] text-xl md:text-2xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
+          <motion.p variants={itemVariants} className="text-black text-xl md:text-2xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
             Bespoke solar ecosystems for Hyderabad’s most distinguished residences—integrated invisibly into architecture, engineered for total independence.
           </motion.p>
           
