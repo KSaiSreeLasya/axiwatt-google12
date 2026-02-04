@@ -39,7 +39,7 @@ export const Geography: React.FC = () => {
           transition={{ duration: 1 }}
           className="text-center mb-32"
         >
-          <p className="text-[12px] tracking-[0.5em] uppercase text-[#635e5a] mb-6 font-semibold">Local Presence</p>
+          <p className="text-[12px] tracking-[0.5em] uppercase text-black mb-6 font-semibold">Local Presence</p>
           <h2 className="text-5xl md:text-7xl font-serif text-[#2c2825]">Serving Hyderabad's Most Exclusive Enclaves</h2>
         </motion.div>
 
