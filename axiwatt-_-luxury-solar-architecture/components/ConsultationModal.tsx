@@ -124,7 +124,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-serif text-[#2c2825] mb-4">Request a Private Consultation</h2>
-          <p className="text-[#635e5a] font-light text-base">
+          <p className="text-black font-light text-base">
             Experience absolute discretion and architectural excellence. Our concierge team will contact you within 24 hours.
           </p>
         </motion.div>
