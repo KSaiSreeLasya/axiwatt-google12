@@ -71,7 +71,7 @@ export const Collection: React.FC = () => {
                       whileHover={{ x: 8 }}
                       className="flex items-center justify-between py-6 border-b border-[#e8e4df] transition-colors hover:border-[#b9975b]"
                     >
-                      <span className="text-[12px] tracking-[0.2em] uppercase text-[#635e5a] font-bold">{row.label}</span>
+                      <span className="text-[12px] tracking-[0.2em] uppercase text-black font-bold">{row.label}</span>
                       <span className="text-[13px] tracking-[0.05em] text-[#2c2825] font-semibold">{row.val}</span>
                     </motion.div>
                   ))}
