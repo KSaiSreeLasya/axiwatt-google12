@@ -41,6 +41,8 @@ const partnerCategories = [
 ];
 
 export const PartnersPage: React.FC<PartnersPageProps> = ({ onOpenConsultation }) => {
+  useMetaTags(seoConfig.partners);
+
   return (
     <div className="bg-[#fdfcfb] pt-24 pb-40 min-h-screen overflow-hidden">
       <div className="container mx-auto px-8">
