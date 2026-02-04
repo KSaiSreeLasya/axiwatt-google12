@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -34,7 +33,7 @@ export const Collection: React.FC = () => {
           transition={{ duration: 1.2 }}
           className="mb-32 text-center lg:text-left"
         >
-          <p className="text-[13px] tracking-[0.5em] uppercase text-[#635e5a] mb-8 font-bold">The Axiwatt Collection</p>
+          <p className="text-[13px] tracking-[0.5em] uppercase text-black mb-8 font-bold">The Axiwatt Collection</p>
           <h2 className="text-5xl md:text-8xl font-serif text-[#2c2825] max-w-5xl leading-[1.1]">Signature Solar Architecture</h2>
         </motion.div>
 
