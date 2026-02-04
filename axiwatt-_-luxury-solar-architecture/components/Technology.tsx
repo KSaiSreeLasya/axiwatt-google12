@@ -107,7 +107,7 @@ export const Technology: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-32 pt-20 border-t border-[#e8e4df] text-center"
         >
-          <p className="text-[12px] tracking-[0.3em] uppercase text-[#635e5a] mb-8 font-semibold">Verified Excellence</p>
+          <p className="text-[12px] tracking-[0.3em] uppercase text-black mb-8 font-semibold">Verified Excellence</p>
           <div className="flex flex-wrap justify-center gap-12 md:gap-16">
             {['LEED Certification', 'IGBC Standards', 'IEC 61215', 'UL 1703', '40-Year Warranty'].map((cert, idx) => (
               <motion.div
