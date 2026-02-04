@@ -146,7 +146,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
           transition={{ duration: 1, delay: 0.3 }}
           className="mt-40 pt-24 border-t border-[#e8e4df] text-center"
         >
-          <p className="text-[#635e5a] max-w-3xl mx-auto font-light text-xl leading-relaxed">
+          <p className="text-black max-w-3xl mx-auto font-light text-xl leading-relaxed">
             Whether you choose to visit our design studio or engage remotely through the Axiwatt App, every interaction is grounded in absolute discretion, technical transparency, and a commitment to your estate's 40-year legacy.
           </p>
         </motion.div>
