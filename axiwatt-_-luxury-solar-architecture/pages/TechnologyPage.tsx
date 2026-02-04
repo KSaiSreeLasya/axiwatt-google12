@@ -47,6 +47,8 @@ const techCategories = [
 ];
 
 export const TechnologyPage: React.FC = () => {
+  useMetaTags(seoConfig.technology);
+
   return (
     <div className="bg-[#fdfcfb] pt-24 pb-40 min-h-screen overflow-hidden">
       <div className="container mx-auto px-8">
