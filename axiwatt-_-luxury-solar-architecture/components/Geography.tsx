@@ -103,7 +103,7 @@ export const Geography: React.FC = () => {
         >
           <p className="text-[12px] tracking-[0.3em] uppercase text-[#b9975b] mb-6 font-bold">Service Coverage</p>
           <h3 className="text-3xl md:text-4xl font-serif text-[#2c2825] mb-6">Citywide Expertise</h3>
-          <p className="text-[#635e5a] max-w-2xl mx-auto font-light text-lg mb-12">
+          <p className="text-black max-w-2xl mx-auto font-light text-lg mb-12">
             With offices and installation crews across Hyderabad's premium enclaves, we provide local responsiveness with global standards.
           </p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
