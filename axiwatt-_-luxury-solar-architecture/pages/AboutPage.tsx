@@ -1,8 +1,10 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useMetaTags } from '../hooks/useMetaTags';
+import { seoConfig } from '../config/seoConfig';
 
 export const AboutPage: React.FC = () => {
+  useMetaTags(seoConfig.about);
   return (
     <motion.div 
       initial={{ opacity: 0 }}
