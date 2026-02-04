@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
               whileHover={{ color: '#b9975b' }}
               onClick={() => handleNavClick(item.view)}
               className={`transition-colors px-1 py-2 relative group ${
-                currentView === item.view ? 'text-[#2c2825]' : 'text-[#635e5a]'
+                currentView === item.view ? 'text-[#2c2825]' : 'text-black'
               }`}
             >
               {item.label}
