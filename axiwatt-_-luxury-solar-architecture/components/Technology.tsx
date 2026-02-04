@@ -91,7 +91,7 @@ export const Technology: React.FC = () => {
                     <p className="text-[12px] tracking-[0.2em] uppercase text-[#2c2825] font-semibold group-hover:text-[#b9975b] transition-colors">
                       {partner.name}
                     </p>
-                    <p className="text-[11px] text-[#635e5a] font-light">{partner.spec}</p>
+                    <p className="text-[11px] text-black font-light">{partner.spec}</p>
                   </motion.div>
                 ))}
               </div>
