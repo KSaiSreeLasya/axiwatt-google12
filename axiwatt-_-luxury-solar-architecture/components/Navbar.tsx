@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
         </motion.button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-10 xl:gap-14 text-[11px] xl:text-[12px] tracking-[0.25em] uppercase font-semibold flex-1 justify-center">
+        <div className="hidden lg:flex items-center gap-10 xl:gap-14 text-[12px] xl:text-[13px] tracking-[0.25em] uppercase font-semibold flex-1 justify-center">
           {navItems.map((item, idx) => (
             <motion.button
               key={item.view}
