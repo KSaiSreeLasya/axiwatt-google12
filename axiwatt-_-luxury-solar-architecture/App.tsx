@@ -22,6 +22,8 @@ import { ProductsPage } from './pages/ProductsPage';
 import { TechnologyPage } from './pages/TechnologyPage';
 import { ProcessPage } from './pages/ProcessPage';
 import { PartnersPage } from './pages/PartnersPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsOfServicePage } from './pages/TermsOfServicePage';
 
 export type View = 'home' | 'about' | 'products' | 'technology' | 'process' | 'partners';
 
