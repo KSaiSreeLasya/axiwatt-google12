@@ -172,13 +172,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
                 transition={{ delay: 0.15, duration: 0.5 }}
                 className="group"
               >
-                <input 
+                <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Private Email Address *"
-                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#dcd7d0] font-light"
+                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#2c2825] font-light"
                   required
                 />
               </motion.div>
