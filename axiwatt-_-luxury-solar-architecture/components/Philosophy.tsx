@@ -30,7 +30,7 @@ export const Philosophy: React.FC = () => {
           transition={{ duration: 1 }}
           className="text-center mb-32"
         >
-          <p className="text-[12px] tracking-[0.5em] uppercase text-black mb-6 font-semibold">Our Core Ethos</p>
+          <p className="text-[13px] tracking-[0.5em] uppercase text-black mb-6 font-semibold">Our Core Ethos</p>
           <h2 className="text-5xl md:text-7xl font-serif text-[#2c2825] mb-8">Beyond Utility. Beyond ROI.</h2>
           <p className="text-black max-w-3xl mx-auto font-light text-xl leading-relaxed">
             We view solar not as an addition, but as critical infrastructure. A long-term architectural asset designed for resilience, legacy, and endurance.
@@ -48,7 +48,7 @@ export const Philosophy: React.FC = () => {
               className="group cursor-default"
             >
               <div className="mb-10 overflow-hidden">
-                <p className="text-[12px] tracking-[0.3em] uppercase text-[#b9975b] mb-3 font-semibold">{pillar.tag}</p>
+                <p className="text-[13px] tracking-[0.3em] uppercase text-[#b9975b] mb-3 font-semibold">{pillar.tag}</p>
                 <div className="h-[1px] w-full bg-[#e8e4df] relative">
                   <motion.div 
                     initial={{ scaleX: 0 }}

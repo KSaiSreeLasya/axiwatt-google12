@@ -10,7 +10,7 @@ export const Advantage: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-amber-700 mb-4 font-semibold">Vertical Integration</p>
+            <p className="text-[12px] tracking-[0.4em] uppercase text-amber-700 mb-4 font-semibold">Vertical Integration</p>
             <h2 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-8 leading-tight">
               Beyond Consultants. <br />Beyond Contractors.
             </h2>
@@ -21,7 +21,7 @@ export const Advantage: React.FC = () => {
                   <span className="text-amber-600 font-serif text-xl">01</span>
                   The Problem with Fragmentation
                 </h4>
-                <p className="text-black font-light leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
+                <p className="text-black font-light text-base leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
                   Fragmented solar delivery leads to compromised aesthetics and technical gaps. We solve this by owning the entire ecosystem.
                 </p>
               </div>
@@ -31,7 +31,7 @@ export const Advantage: React.FC = () => {
                   <span className="text-amber-600 font-serif text-xl">02</span>
                   Holistic Architectural Synergy
                 </h4>
-                <p className="text-black font-light leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
+                <p className="text-black font-light text-base leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
                   Axiwatt integrates architecture, civil engineering, MEP, and energy logic into a single streamlined workflow.
                 </p>
               </div>
@@ -41,7 +41,7 @@ export const Advantage: React.FC = () => {
                   <span className="text-amber-600 font-serif text-xl">03</span>
                   Family-Office Governance
                 </h4>
-                <p className="text-black font-light leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
+                <p className="text-black font-light text-base leading-relaxed pl-10 border-l border-neutral-200 group-hover:border-amber-600/40 transition-colors">
                   Operating with absolute discretion and capital depth. We are here for the 40-year legacy of your estate.
                 </p>
               </div>

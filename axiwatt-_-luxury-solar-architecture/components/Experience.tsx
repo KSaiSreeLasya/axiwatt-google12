@@ -64,7 +64,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
                     className="flex items-start gap-4 text-black"
                   >
                     <span className="text-[#b9975b] font-serif text-xl mt-1">✦</span>
-                    <span className="font-light text-base leading-relaxed">{feature}</span>
+                    <span className="font-light text-lg leading-relaxed">{feature}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -74,7 +74,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
                 onClick={onOpenConsultation}
                 className="mt-10 px-12 py-5 bg-white border-2 border-[#2c2825] text-[#2c2825] text-[13px] tracking-[0.2em] uppercase font-bold transition-all duration-500 hover:bg-[#2c2825] hover:text-white"
               >
-                Request a Studio Visit
+                Request a Design Render
               </motion.button>
             </div>
           </motion.div>
@@ -122,7 +122,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
                     className="flex items-start gap-4 text-black"
                   >
                     <span className="text-[#b9975b] font-serif text-xl mt-1">✦</span>
-                    <span className="font-light text-base leading-relaxed">{feature}</span>
+                    <span className="font-light text-lg leading-relaxed">{feature}</span>
                   </motion.li>
                 ))}
               </ul>

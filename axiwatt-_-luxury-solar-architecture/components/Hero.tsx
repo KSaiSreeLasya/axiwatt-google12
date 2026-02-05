@@ -54,14 +54,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
             animate="visible"
             className="max-w-3xl"
           >
-            <motion.p variants={itemVariants} className="text-[12px] tracking-[0.7em] uppercase text-[#d4af37] mb-6 font-bold">
+            <motion.p variants={itemVariants} className="text-[13px] tracking-[0.7em] uppercase text-[#d4af37] mb-6 font-bold">
               Architectural Energy Autonomy
             </motion.p>
             <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-[1.1] tracking-tighter drop-shadow-lg">
               Where Grandeur <br />
               <span className="italic font-light opacity-90">Meets</span> <br />Autonomy
             </motion.h1>
-            <motion.p variants={itemVariants} className="text-white text-base md:text-lg lg:text-xl font-light max-w-2xl mb-12 leading-relaxed drop-shadow">
+            <motion.p variants={itemVariants} className="text-white text-lg md:text-xl lg:text-2xl font-light max-w-2xl mb-12 leading-relaxed drop-shadow">
               Bespoke solar ecosystems for Hyderabad's most distinguished residences—integrated invisibly into architecture, engineered for total independence.
             </motion.p>
             
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               whileHover={{ scale: 1.05, boxShadow: "0 30px 60px rgba(0,0,0,0.3)" }}
               whileTap={{ scale: 0.95 }}
               onClick={onOpenConsultation}
-              className="px-12 py-6 bg-white text-[#2c2825] text-[12px] tracking-[0.3em] uppercase font-bold transition-all duration-500 shadow-xl hover:bg-[#d4af37]"
+              className="px-12 py-6 bg-white text-[#2c2825] text-[13px] tracking-[0.3em] uppercase font-bold transition-all duration-500 shadow-xl hover:bg-[#d4af37]"
             >
               Private Consultation
             </motion.button>

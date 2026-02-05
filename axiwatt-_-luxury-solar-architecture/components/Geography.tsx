@@ -11,7 +11,7 @@ const locations = [
   {
     name: "Jubilee Hills & Banjara Hills",
     description: "Heritage-sensitive installations for expansive independent estates, respecting architectural character while delivering autonomy.",
-    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
     highlights: ["Heritage estates", "Independent villas", "Architectural respect", "Large-scale systems"]
   },
   {
@@ -23,7 +23,7 @@ const locations = [
   {
     name: "Tellapur & Gachibowli",
     description: "Emerging luxury developments with integrated solar architecture from design conception through final delivery.",
-    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1000",
     highlights: ["New developments", "Design integration", "Modern architecture", "Future-ready systems"]
   }
 ];
@@ -66,12 +66,12 @@ export const Geography: React.FC = () => {
               <div>
                 <motion.h3
                   whileHover={{ x: 5 }}
-                  className="text-2xl md:text-3xl font-serif text-[#2c2825] mb-4 group-hover:text-[#b9975b] transition-colors duration-500"
+                  className="text-3xl md:text-4xl font-serif text-[#2c2825] mb-4 group-hover:text-[#b9975b] transition-colors duration-500"
                 >
                   {loc.name}
                 </motion.h3>
                 
-                <p className="text-black font-light text-base leading-relaxed mb-8">
+                <p className="text-black font-light text-lg leading-relaxed mb-8">
                   {loc.description}
                 </p>
                 
@@ -82,7 +82,7 @@ export const Geography: React.FC = () => {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: idx * 0.12 + (hIdx * 0.05), duration: 0.6 }}
-                      className="text-[11px] tracking-[0.1em] uppercase bg-white border border-[#e8e4df] px-4 py-2 text-black font-semibold group-hover:border-[#b9975b] group-hover:text-[#b9975b] transition-colors"
+                      className="text-[13px] tracking-[0.1em] uppercase bg-white border border-[#e8e4df] px-4 py-2 text-black font-semibold group-hover:border-[#b9975b] group-hover:text-[#b9975b] transition-colors"
                     >
                       {highlight}
                     </motion.span>
@@ -113,7 +113,7 @@ export const Geography: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5 + (idx * 0.08), duration: 0.6 }}
-                className="px-6 py-3 border-2 border-[#b9975b] text-[12px] tracking-[0.1em] uppercase font-semibold text-[#b9975b] hover:bg-[#b9975b] hover:text-white transition-colors"
+                className="px-6 py-3 border-2 border-[#b9975b] text-[13px] tracking-[0.1em] uppercase font-semibold text-[#b9975b] hover:bg-[#b9975b] hover:text-white transition-colors"
               >
                 {service}
               </motion.div>
