@@ -151,7 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
                 onOpenConsultation();
                 setMobileMenuOpen(false);
               }}
-              className="w-full py-4 bg-[#2c2825] text-white text-[12px] tracking-[0.2em] uppercase font-bold hover:bg-[#b9975b] transition-colors"
+              className="w-full py-4 bg-[#2c2825] text-white text-[13px] tracking-[0.2em] uppercase font-bold hover:bg-[#b9975b] transition-colors"
             >
               Request Consultation
             </motion.button>
