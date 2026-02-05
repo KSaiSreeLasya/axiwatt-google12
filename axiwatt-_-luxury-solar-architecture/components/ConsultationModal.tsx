@@ -62,6 +62,34 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
         phone: formData.phone
       });
 
+      // Send email notification to admin
+      try {
+        const supabaseUrl = 'https://njdxufiyzwwmkcekbqbm.supabase.co';
+        const emailResponse = await fetch(
+          `${supabaseUrl}/functions/v1/send-consultation-email`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              full_name: formData.fullName,
+              email: formData.email,
+              estate_location: formData.estateLocation,
+              objectives: formData.objectives,
+              phone: formData.phone
+            })
+          }
+        );
+
+        if (!emailResponse.ok) {
+          console.warn('Email notification failed, but consultation was saved');
+        }
+      } catch (emailError) {
+        console.warn('Failed to send email notification:', emailError);
+        // Don't fail the submission if email sending fails
+      }
+
       setSubmitMessage({
         type: 'success',
         text: 'Thank you! Our concierge team will contact you within 24 hours at ' + formData.email
