@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onOpenConsultation}
-            className="hidden md:block px-6 md:px-8 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase overflow-hidden transition-all duration-500 border-2 border-[#2c2825] font-bold text-[#2c2825] hover:bg-[#2c2825] hover:text-white"
+            className="hidden md:block px-6 md:px-8 py-3 text-[12px] md:text-[13px] tracking-[0.2em] uppercase overflow-hidden transition-all duration-500 border-2 border-[#2c2825] font-bold text-[#2c2825] hover:bg-[#2c2825] hover:text-white"
           >
             Consultation
           </motion.button>
