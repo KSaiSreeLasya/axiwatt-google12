@@ -60,5 +60,25 @@ export const seoConfig = {
     ogImage: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1200',
     twitterCard: 'summary_large_image',
     canonicalUrl: `${baseUrl}/partners`
+  },
+  privacy: {
+    title: 'Privacy Policy | Axiwatt',
+    description: 'Read Axiwatt\'s comprehensive privacy policy. We protect your data with enterprise-grade security and UHNW-grade confidentiality protocols.',
+    keywords: 'privacy policy, data protection, confidentiality, security, personal data, GDPR, data rights',
+    ogTitle: 'Privacy Policy | Axiwatt',
+    ogDescription: 'Axiwatt\'s privacy policy and data protection standards.',
+    ogImage: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1200',
+    twitterCard: 'summary_large_image',
+    canonicalUrl: `${baseUrl}/privacy`
+  },
+  terms: {
+    title: 'Terms of Service | Axiwatt',
+    description: 'Terms of Service for Axiwatt. Understand the terms and conditions governing your use of our website and services.',
+    keywords: 'terms of service, terms and conditions, legal terms, user agreement, service terms',
+    ogTitle: 'Terms of Service | Axiwatt',
+    ogDescription: 'Axiwatt\'s terms of service and user agreement.',
+    ogImage: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1200',
+    twitterCard: 'summary_large_image',
+    canonicalUrl: `${baseUrl}/terms`
   }
 };
