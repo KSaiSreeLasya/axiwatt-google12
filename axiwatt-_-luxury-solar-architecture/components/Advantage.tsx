@@ -10,7 +10,7 @@ export const Advantage: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-amber-700 mb-4 font-semibold">Vertical Integration</p>
+            <p className="text-[12px] tracking-[0.4em] uppercase text-amber-700 mb-4 font-semibold">Vertical Integration</p>
             <h2 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-8 leading-tight">
               Beyond Consultants. <br />Beyond Contractors.
             </h2>
