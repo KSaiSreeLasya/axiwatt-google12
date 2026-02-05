@@ -130,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.05, duration: 0.3 }}
                   onClick={() => handleNavClick(item.view)}
-                  className={`text-left text-sm tracking-[0.2em] uppercase font-semibold py-3 px-4 border-l-2 transition-all duration-300 ${
+                  className={`text-left text-base tracking-[0.2em] uppercase font-semibold py-3 px-4 border-l-2 transition-all duration-300 ${
                     currentView === item.view
                       ? 'border-[#b9975b] text-[#b9975b] bg-[#b9975b]/5'
                       : 'border-transparent text-black hover:text-[#2c2825]'
