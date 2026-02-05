@@ -23,7 +23,7 @@ const locations = [
   {
     name: "Tellapur & Gachibowli",
     description: "Emerging luxury developments with integrated solar architecture from design conception through final delivery.",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000",
+    img: "https://images.pexels.com/photos/35847096/pexels-photo-35847096.jpeg?auto=compress&cs=tinysrgb&w=1200",
     highlights: ["New developments", "Design integration", "Modern architecture", "Future-ready systems"]
   }
 ];
