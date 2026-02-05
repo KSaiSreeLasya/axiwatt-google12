@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { saveConsultationRequest } from '../config/supabaseClient';
 
 interface ConsultationModalProps {
   onClose: () => void;
@@ -52,16 +53,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
         return;
       }
 
-      // Here you would typically send data to your backend
-      // For now, we'll simulate a successful submission
-      // In production, this would integrate with your backend API and Gemini
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Save consultation request to Supabase
+      await saveConsultationRequest({
+        full_name: formData.fullName,
+        email: formData.email,
+        estate_location: formData.estateLocation,
+        objectives: formData.objectives,
+        phone: formData.phone
+      });
 
-      setSubmitMessage({ 
-        type: 'success', 
-        text: 'Thank you! Our concierge team will contact you within 24 hours at ' + formData.email 
+      setSubmitMessage({
+        type: 'success',
+        text: 'Thank you! Our concierge team will contact you within 24 hours at ' + formData.email
       });
 
       // Reset form after short delay
@@ -79,9 +82,10 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
         onClose();
       }, 3000);
     } catch (error) {
-      setSubmitMessage({ 
-        type: 'error', 
-        text: 'An error occurred. Please try again or email concierge@axiwatt.com' 
+      console.error('Submission error:', error);
+      setSubmitMessage({
+        type: 'error',
+        text: 'Unable to process your request. Please try again or email concierge@axiwatt.com'
       });
     } finally {
       setIsSubmitting(false);
@@ -155,13 +159,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
                 transition={{ delay: 0.15, duration: 0.5 }}
                 className="group"
               >
-                <input 
+                <input
                   type="text"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Full Name *"
-                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#dcd7d0] font-light"
+                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#2c2825] font-light"
                   required
                 />
               </motion.div>
@@ -172,13 +176,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
                 transition={{ delay: 0.15, duration: 0.5 }}
                 className="group"
               >
-                <input 
+                <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Private Email Address *"
-                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#dcd7d0] font-light"
+                  className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#2c2825] font-light"
                   required
                 />
               </motion.div>
@@ -191,13 +195,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
               transition={{ delay: 0.2, duration: 0.5 }}
               className="group"
             >
-              <input 
+              <input
                 type="text"
                 name="estateLocation"
                 value={formData.estateLocation}
                 onChange={handleChange}
                 placeholder="Estate Location (e.g., Jubilee Hills) *"
-                className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#dcd7d0] font-light"
+                className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#2c2825] font-light"
                 required
               />
             </motion.div>
@@ -209,13 +213,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
               transition={{ delay: 0.25, duration: 0.5 }}
               className="group"
             >
-              <textarea 
+              <textarea
                 name="objectives"
                 value={formData.objectives}
                 onChange={handleChange}
                 rows={4}
                 placeholder="Primary Objectives (Architecture, Independence, Retrofit, etc.)"
-                className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#dcd7d0] font-light resize-none"
+                className="w-full bg-transparent border-b-2 border-[#e8e4df] py-4 focus:outline-none focus:border-[#b9975b] transition-colors text-[#2c2825] placeholder:text-[#2c2825] font-light resize-none"
               />
             </motion.div>
 

@@ -22,8 +22,10 @@ import { ProductsPage } from './pages/ProductsPage';
 import { TechnologyPage } from './pages/TechnologyPage';
 import { ProcessPage } from './pages/ProcessPage';
 import { PartnersPage } from './pages/PartnersPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsOfServicePage } from './pages/TermsOfServicePage';
 
-export type View = 'home' | 'about' | 'products' | 'technology' | 'process' | 'partners';
+export type View = 'home' | 'about' | 'products' | 'technology' | 'process' | 'partners' | 'privacy' | 'terms';
 
 const App: React.FC = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
@@ -49,6 +51,10 @@ const App: React.FC = () => {
         return <ProcessPage />;
       case 'partners':
         return <PartnersPage onOpenConsultation={() => setIsConsultationOpen(true)} />;
+      case 'privacy':
+        return <PrivacyPolicyPage />;
+      case 'terms':
+        return <TermsOfServicePage />;
       case 'home':
       default:
         return (
