@@ -66,12 +66,12 @@ export const Geography: React.FC = () => {
               <div>
                 <motion.h3
                   whileHover={{ x: 5 }}
-                  className="text-2xl md:text-3xl font-serif text-[#2c2825] mb-4 group-hover:text-[#b9975b] transition-colors duration-500"
+                  className="text-3xl md:text-4xl font-serif text-[#2c2825] mb-4 group-hover:text-[#b9975b] transition-colors duration-500"
                 >
                   {loc.name}
                 </motion.h3>
                 
-                <p className="text-black font-light text-base leading-relaxed mb-8">
+                <p className="text-black font-light text-lg leading-relaxed mb-8">
                   {loc.description}
                 </p>
                 
@@ -82,7 +82,7 @@ export const Geography: React.FC = () => {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: idx * 0.12 + (hIdx * 0.05), duration: 0.6 }}
-                      className="text-[11px] tracking-[0.1em] uppercase bg-white border border-[#e8e4df] px-4 py-2 text-black font-semibold group-hover:border-[#b9975b] group-hover:text-[#b9975b] transition-colors"
+                      className="text-[13px] tracking-[0.1em] uppercase bg-white border border-[#e8e4df] px-4 py-2 text-black font-semibold group-hover:border-[#b9975b] group-hover:text-[#b9975b] transition-colors"
                     >
                       {highlight}
                     </motion.span>
