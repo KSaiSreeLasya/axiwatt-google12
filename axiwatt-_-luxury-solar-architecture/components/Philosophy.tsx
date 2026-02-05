@@ -48,7 +48,7 @@ export const Philosophy: React.FC = () => {
               className="group cursor-default"
             >
               <div className="mb-10 overflow-hidden">
-                <p className="text-[12px] tracking-[0.3em] uppercase text-[#b9975b] mb-3 font-semibold">{pillar.tag}</p>
+                <p className="text-[13px] tracking-[0.3em] uppercase text-[#b9975b] mb-3 font-semibold">{pillar.tag}</p>
                 <div className="h-[1px] w-full bg-[#e8e4df] relative">
                   <motion.div 
                     initial={{ scaleX: 0 }}
