@@ -11,7 +11,7 @@ const locations = [
   {
     name: "Jubilee Hills & Banjara Hills",
     description: "Heritage-sensitive installations for expansive independent estates, respecting architectural character while delivering autonomy.",
-    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
     highlights: ["Heritage estates", "Independent villas", "Architectural respect", "Large-scale systems"]
   },
   {
@@ -23,7 +23,7 @@ const locations = [
   {
     name: "Tellapur & Gachibowli",
     description: "Emerging luxury developments with integrated solar architecture from design conception through final delivery.",
-    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
     highlights: ["New developments", "Design integration", "Modern architecture", "Future-ready systems"]
   }
 ];
