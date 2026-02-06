@@ -77,6 +77,7 @@ Please follow up with the client at your earliest convenience.
     `;
 
     // Send email via SendGrid
+    console.log("Calling SendGrid API...");
     const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
       method: "POST",
       headers: {
@@ -101,11 +102,15 @@ Please follow up with the client at your earliest convenience.
       }),
     });
 
+    console.log("SendGrid response status:", response.status);
+
     if (!response.ok) {
       const error = await response.text();
-      console.error("SendGrid error:", error);
-      throw new Error(`SendGrid API error: ${response.status}`);
+      console.error("SendGrid error response:", error, "Status:", response.status);
+      throw new Error(`SendGrid API error: ${response.status} - ${error}`);
     }
+
+    console.log("Email sent successfully to:", ADMIN_EMAIL);
 
     return new Response(
       JSON.stringify({ success: true, message: "Email sent successfully" }),
