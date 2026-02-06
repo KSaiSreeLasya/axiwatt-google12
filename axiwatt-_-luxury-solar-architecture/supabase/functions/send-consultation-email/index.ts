@@ -49,7 +49,7 @@ serve(async (req) => {
     if (!data.full_name || !data.email || !data.estate_location) {
       return new Response(
         JSON.stringify({ error: "Missing required fields" }),
-        { status: 400, headers: { "Content-Type": "application/json" } }
+        { status: 400, headers: corsHeaders }
       );
     }
 
@@ -57,7 +57,7 @@ serve(async (req) => {
       console.error("ERROR: SENDGRID_API_KEY is not set");
       return new Response(
         JSON.stringify({ error: "Email service not configured" }),
-        { status: 500, headers: { "Content-Type": "application/json" } }
+        { status: 500, headers: corsHeaders }
       );
     }
 
