@@ -91,7 +91,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onOpenConsultation }) =>
               <motion.img
                 whileHover={{ scale: 1.08 }}
                 transition={{ duration: 2 }}
-                src="https://cdn.builder.io/api/v1/image/assets%2F1b9c62c1213140709e07580a4ee1f322%2F1b39eedd02764a11b894829750f3e546?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F1b9c62c1213140709e07580a4ee1f322%2F9124ed83ddcf47c88d40c1592f633ebe?format=webp&width=800&height=1200"
                 alt="Axiwatt Digital Command App"
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
