@@ -70,29 +70,35 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ onClose })
           : 'https://njdxufiyzwwmkcekbqbm.supabase.co';
 
         const functionPath = '/functions/v1/send-consultation-email';
+        const emailUrl = `${supabaseUrl}${functionPath}`;
 
-        const emailResponse = await fetch(
-          `${supabaseUrl}${functionPath}`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              full_name: formData.fullName,
-              email: formData.email,
-              estate_location: formData.estateLocation,
-              objectives: formData.objectives,
-              phone: formData.phone
-            })
-          }
-        );
+        console.log('Attempting to send email to:', emailUrl);
+
+        const emailResponse = await fetch(emailUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            full_name: formData.fullName,
+            email: formData.email,
+            estate_location: formData.estateLocation,
+            objectives: formData.objectives,
+            phone: formData.phone
+          })
+        });
+
+        const responseText = await emailResponse.text();
+        console.log('Email function response status:', emailResponse.status);
+        console.log('Email function response body:', responseText);
 
         if (!emailResponse.ok) {
-          console.warn('Email notification failed, but consultation was saved');
+          console.warn('Email notification failed but consultation was saved. Status:', emailResponse.status);
+        } else {
+          console.log('Email notification sent successfully');
         }
       } catch (emailError) {
-        console.warn('Failed to send email notification:', emailError);
+        console.error('Failed to send email notification:', emailError);
         // Don't fail the submission if email sending fails
       }
 
