@@ -47,9 +47,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation, currentView,
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => handleNavClick('home')}
-          className="text-2xl md:text-3xl lg:text-4xl font-serif tracking-widest text-[#2c2825] cursor-pointer outline-none hover:text-[#b9975b] transition-colors duration-300 flex-shrink-0"
+          className="cursor-pointer outline-none flex-shrink-0 h-10 md:h-12 lg:h-14"
         >
-          AXIWATT
+          <img src="https://cdn.builder.io/api/v1/image/assets%2F1b9c62c1213140709e07580a4ee1f322%2Fa3b00a2f7826488a944c1768b6f944d2?format=webp&width=800&height=1200" alt="AXIWATT" className="h-full w-auto object-contain" />
         </motion.button>
 
         {/* Desktop Navigation */}
