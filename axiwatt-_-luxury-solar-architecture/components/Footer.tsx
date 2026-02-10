@@ -18,8 +18,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation, onNavigate }
             viewport={{ once: true }}
             className="max-w-md"
           >
-            <button onClick={() => onNavigate('home')} className="mb-8 outline-none hover:opacity-70 transition-opacity h-16">
-              <img src="/axiwatt-logo.svg" alt="AXIWATT" className="h-full w-auto object-contain" />
+            <button onClick={() => onNavigate('home')} className="mb-8 outline-none hover:opacity-70 transition-opacity h-20">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F1b9c62c1213140709e07580a4ee1f322%2Fa3b00a2f7826488a944c1768b6f944d2?format=webp&width=800&height=1200" alt="AXIWATT" className="h-full w-auto object-contain" />
             </button>
             <p className="text-neutral-500 font-light leading-relaxed">
               Hyderabad’s premier collective for luxury energy architecture. Engineered for autonomy, designed for distinction.
