@@ -91,6 +91,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation, onNavigate }
         >
           <div className="text-[10px] tracking-[0.2em] uppercase text-neutral-400">
             © 2024 AXIWATT Energy 
+            <br/>
+            designed and developed by Axisphere Mediaworx
           </div>
           <div className="flex gap-12 text-[10px] tracking-[0.2em] uppercase text-neutral-400">
             <motion.button whileHover={{ y: -1 }} onClick={() => onNavigate('privacy')} className="hover:text-neutral-900 transition-colors">Privacy Policy</motion.button>
